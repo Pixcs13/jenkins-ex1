@@ -22,13 +22,6 @@ pipeline {
             }
         }
 
-        stage('example') {
-
-            steps {
-                sh './example.sh'
-            }
-        }
-
         }
 
     }
