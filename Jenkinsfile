@@ -7,24 +7,26 @@ pipeline {
         stage('run.sh') {
 
             steps {
-
                 sh '''
                 sh run.sh
                 '''
-
             }
-
         }
+
         stage('Hello') {
 
             steps {
-
                 sh '''
                 echo "Hi class, this is a pipeline"
                 '''
-
             }
+        }
 
+        stage('example') {
+
+            steps {
+                sh './example.sh'
+            }
         }
 
         }
